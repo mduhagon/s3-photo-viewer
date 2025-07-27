@@ -18,8 +18,16 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "amplify:data": ["amplify/types/data.ts"],
+      "amplify:storage": ["amplify/types/storage.ts"]
+    },
+    "typeRoots": ["./node_modules/@types", "./amplify/types"]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
+
